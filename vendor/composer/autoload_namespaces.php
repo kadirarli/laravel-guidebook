@@ -35,6 +35,8 @@ return array(
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
     'Frozennode\\Administrator' => array($vendorDir . '/frozennode/administrator/src'),
     'File' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Faker\\PHPUnit' => array($vendorDir . '/fzaninotto/faker/test'),
+    'Faker' => array($vendorDir . '/fzaninotto/faker/src'),
     'Cviebrock\\EloquentTaggable' => array($vendorDir . '/cviebrock/eloquent-taggable/src'),
     'Cviebrock\\EloquentSluggable' => array($vendorDir . '/cviebrock/eloquent-sluggable/src'),
     'Crypt' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
