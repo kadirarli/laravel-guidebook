@@ -13,7 +13,8 @@
 		"mews/purifier": "dev-master-l4",
 		"cviebrock/eloquent-sluggable": "2.*",
 		"cviebrock/eloquent-taggable": "0.*",
-		"way/generators": "~2.0"
+		"way/generators": "~2.0",
+		"fzaninotto/faker": "v1.3.0"
 	},
 	"autoload": {
 		"classmap": [

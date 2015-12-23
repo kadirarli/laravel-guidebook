@@ -1,13 +1,4 @@
-@extends('')
-@section('content')
-
-	{{ Form::open(['url' => '/'.@$phonetype->id, 'method' =>'put']) }}
-		{{ HTML::ul($errors->all()) }}
-		<!-- `Name` Field -->
-		{{ Form::label('name', 'Name') }}
-		{{ Form::text('phone_type[name]', @$phonetype->name) }}
-		<!-- Form actions -->
-		<a href='{{URL::previous()}}' >Cancel</a>
-		<button type='submit' >Submit</button>
-	{{ Form::close() }}
-@stop
+{{ Form::model( $phonetype, ['route' => ['phonetypes.update', $phonetype->id], 'method' => 'put', 'role' => 'form'] ) }}
+    {{ Form::text('name') }}
+	{{ Form::button('Save', ['type' => 'submit']) }}
+{{ Form::close() }}

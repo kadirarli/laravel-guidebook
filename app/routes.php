@@ -109,7 +109,4 @@ Route::get ('users/reset_password/{token}', 'UsersController@resetPassword');
 Route::post('users/reset_password', 		'UsersController@doResetPassword');
 Route::get ('users/logout', 				'UsersController@logout');
 
-Route::get ('phoneTypes/create', 			'PhoneTypesController@create');
-Route::get ('phoneTypes/edit', 				'PhoneTypesController@edit');
-Route::get ('phoneTypes/index', 			'PhoneTypesController@index');
-Route::get ('phoneTypes/show', 				'PhoneTypesController@show');
+Route::resource('phonetypes', 'PhoneTypesController');

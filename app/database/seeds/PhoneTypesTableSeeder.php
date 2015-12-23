@@ -7,12 +7,12 @@ class PhoneTypesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
+		$faker = Faker::create('tr_TR');
 
 		foreach(range(1, 10) as $index)
 		{
 			PhoneType::create([
-
+				'name' => $faker->name
 			]);
 		}
 	}
